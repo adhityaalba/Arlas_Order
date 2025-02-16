@@ -18,7 +18,7 @@ class KategoriUkuranResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-tag'; // Icon untuk menu
     protected static ?string $navigationGroup = 'Atribut'; // Grup menu
-    protected static ?string $navigationLabel = 'Kategori';
+    protected static ?string $navigationLabel = 'Kategori Ukuran';
     protected static ?string $label = 'Kategori';
     protected static ?string $pluralLabel = 'Kategori Ukuran';
 
