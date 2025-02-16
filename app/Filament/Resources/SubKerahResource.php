@@ -19,6 +19,7 @@ class SubKerahResource extends Resource
 {
     protected static ?string $model = SubKerah::class;
     protected static ?string $navigationLabel = 'Sub Kerah';
+    protected static ?string $navigationGroup = 'Atribut';
 
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';

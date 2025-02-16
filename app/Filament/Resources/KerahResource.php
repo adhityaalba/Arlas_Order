@@ -16,9 +16,10 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 class KerahResource extends Resource
 {
     protected static ?string $model = Kerah::class;
-    protected static ?string $navigationLabel = 'Kerah';   
+    protected static ?string $navigationLabel = 'Kerah';
     protected static ?string $label = 'Kerah';
     protected static ?string $pluralLabel = 'Kategori Kerah';
+    protected static ?string $navigationGroup = 'Atribut';
 
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';

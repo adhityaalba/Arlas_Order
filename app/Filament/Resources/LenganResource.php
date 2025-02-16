@@ -14,6 +14,7 @@ class LenganResource extends Resource
 {
     protected static ?string $model = Lengan::class;
     protected static ?string $navigationLabel = 'Lengan';
+    protected static ?string $navigationGroup = 'Atribut';
 
 
     // Icon untuk menu

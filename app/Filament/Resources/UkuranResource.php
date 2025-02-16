@@ -19,7 +19,7 @@ class UkuranResource extends Resource
     protected static ?string $navigationIcon = 'heroicon-o-cube';
 
     // Grup menu
-    protected static ?string $navigationGroup = 'UKURAN';
+    protected static ?string $navigationGroup = 'Atribut';
 
     public static function form(Form $form): Form
     {

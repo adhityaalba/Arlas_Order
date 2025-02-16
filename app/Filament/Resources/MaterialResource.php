@@ -28,6 +28,7 @@ class MaterialResource extends Resource
     protected static ?string $navigationLabel = 'Bahan';
     protected static ?string $label = 'Bahan';
     protected static ?string $pluralLabel = 'Bahan';
+    protected static ?string $navigationGroup = 'Atribut';
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
