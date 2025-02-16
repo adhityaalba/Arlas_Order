@@ -13,11 +13,6 @@ class SubKerahsTableSeeder extends Seeder
      */
     public function run(): void
     {
-        DB::table('sub_kerahs')->insert([
-            'id' => 1,
-            'kategori_id' => 1,
-            'jenis_kerah' => 'Round Neck',
-            'harga' => 0,
-        ]);
+        DB::table('sub_kerahs')->insert([]);
     }
 }

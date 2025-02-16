@@ -25,12 +25,12 @@ class KerahResource extends Resource
             ->schema([
                 Forms\Components\Select::make('kategori')
                     ->options([
-                        'A' => 'A',
-                        'B' => 'B',
-                        'C' => 'C'
+                        '1' => 'A',
+                        '2' => 'B',
+                        '3' => 'C'
                     ])
-                    ->required()
-                    ->maxLength(255),
+                    ->reactive()
+                    ->required(),
                 Forms\Components\TextInput::make('harga')
                     ->required()
                     ->numeric(),

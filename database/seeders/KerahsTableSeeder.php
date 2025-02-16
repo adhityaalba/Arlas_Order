@@ -14,9 +14,9 @@ class KerahsTableSeeder extends Seeder
     public function run(): void
     {
         DB::table('kerahs')->insert([
-            'id' => 1,
-            'kategori' => 'A',
-            'harga' => 20000,
+            ['id' => 1, 'kategori' => 'A', 'harga' => 0],
+            ['id' => 2, 'kategori' => 'B', 'harga' => 10000],
+            ['id' => 3, 'kategori' => 'C', 'harga' => 15000],
         ]);
     }
 }

@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('sub_kerahs', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('kategori_id')->constrained('kerahs')->cascadeOnDelete();
+            $table->foreignId('kerah_id')->constrained('kerahs')->cascadeOnDelete();
             $table->string('jenis_kerah');
             $table->integer('harga');
             $table->timestamps();
