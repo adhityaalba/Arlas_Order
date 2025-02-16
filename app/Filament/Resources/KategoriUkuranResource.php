@@ -15,10 +15,13 @@ use Filament\Tables\Table;
 class KategoriUkuranResource extends Resource
 {
     protected static ?string $model = Kategori_ukuran::class;
-    protected static ?string $navigationLabel = 'Kategori';
 
     protected static ?string $navigationIcon = 'heroicon-o-tag'; // Icon untuk menu
     protected static ?string $navigationGroup = 'UKURAN'; // Grup menu
+    protected static ?string $navigationLabel = 'Kategori';
+    protected static ?string $label = 'Kategori';
+    protected static ?string $pluralLabel = 'Kategori Ukuran';
+
 
     public static function form(Form $form): Form
     {

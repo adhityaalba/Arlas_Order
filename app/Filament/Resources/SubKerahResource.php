@@ -18,6 +18,8 @@ use App\Filament\Resources\SubKerahResource\RelationManagers;
 class SubKerahResource extends Resource
 {
     protected static ?string $model = SubKerah::class;
+    protected static ?string $navigationLabel = 'Sub Kerah';
+
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 

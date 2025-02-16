@@ -25,6 +25,9 @@ use App\Filament\Resources\MaterialResource\Pages\CreateMaterial;
 class MaterialResource extends Resource
 {
     protected static ?string $model = Material::class;
+    protected static ?string $navigationLabel = 'Bahan';
+    protected static ?string $label = 'Bahan';
+    protected static ?string $pluralLabel = 'Bahan';
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 

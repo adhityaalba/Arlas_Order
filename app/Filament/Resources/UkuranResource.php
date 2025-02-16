@@ -30,6 +30,8 @@ class UkuranResource extends Resource
                     ->options(Kategori_ukuran::pluck('nama_kategori', 'id'))
                     ->required()
                     ->searchable(),
+
+
                 Forms\Components\Select::make('nama_ukuran')
                     ->label('Nama Ukuran')
                     ->options([
@@ -38,7 +40,10 @@ class UkuranResource extends Resource
                         'L' => "L",
                         'XL' => "XL",
                     ])
-                    ->required(),
+                    ->required()
+                    ->unique(ignoreRecord: true, table: 'ukuran', column: 'nama_ukuran', modifyRuleUsing: function ($rule, callable $get) {
+                        return $rule->where('kategori_ukuran_id', $get('kategori_ukuran_id'));
+                    }),
                 Forms\Components\TextInput::make('harga')
                     ->label('Harga')
                     ->numeric()
