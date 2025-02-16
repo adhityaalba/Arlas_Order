@@ -17,6 +17,7 @@ class DatabaseSeeder extends Seeder
             UsersTableSeeder::class,
             KerahsTableSeeder::class,
             SubKerahsTableSeeder::class,
+            CustomerSeeder::class,
         ]);
     }
 }
